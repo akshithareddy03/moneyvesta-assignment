@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moneyvesta – Sections by Akshitha</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f5f5f7;
+    }
+
+    .page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 16px 24px;
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+
+    .brand-left {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .brand-right {
+      font-size: 0.82rem;
+      opacity: 0.7;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #777;
+      margin-bottom: 8px;
+    }
+
+    h2.section-title {
+      font-size: 1.9rem;
+      margin-bottom: 18px;
+      color: #111827;
+    }
+
+    .section-intro {
+      max-width: 620px;
+      font-size: 0.98rem;
+      color: #4b5563;
+      margin-bottom: 24px;
+    }
+
+    /* WHO THIS IS FOR */
+    .who-wrapper {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 24px 22px 26px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+      margin-bottom: 40px;
+    }
+
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      list-style: none;
+    }
+
+    .who-item {
+      padding: 16px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(148,163,184,0.35);
+      background: linear-gradient(135deg, #f9fafb, #ffffff);
+    }
+
+    .who-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
+    .who-title {
+      font-weight: 600;
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .who-text {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    /* PORTFOLIO MANAGEMENT */
+    .portfolio-wrapper {
+      background: radial-gradient(circle at top left, #eef2ff 0, #f9fafb 45%, #ffffff 100%);
+      border-radius: 18px;
+      padding: 24px 22px 26px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+    }
+
+    .portfolio-grid {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .portfolio-item {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 14px 12px;
+      text-align: center;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border: 1px solid rgba(148,163,184,0.4);
+    }
+
+    .portfolio-caption {
+      font-size: 0.88rem;
+      color: #6b7280;
+      margin-top: 8px;
+    }
+
+    footer {
+      padding: 14px 20px 18px;
+      font-size: 0.78rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding: 12px 16px;
+      }
+
+      .container {
+        padding: 20px 16px 32px;
+      }
+
+      h2.section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="brand">
+        <div class="brand-left">Moneyvesta — Mock Layout</div>
+        <div class="brand-right">Designed by Vancha Akshitha Reddy</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="section-label">Clients</div>
+        <h2 class="section-title">Who This Is For</h2>
+        <p class="section-intro">
+          A refined, research-first advisory approach for professionals and families whose finances
+          are spread across multiple accounts, assets and geographies.
+        </p>
+
+        <div class="who-wrapper">
+          <ul class="who-grid">
+            <li class="who-item">
+              <div class="who-tag">Senior Professionals</div>
+              <div class="who-title">Technology & Consulting Leaders</div>
+              <div class="who-text">
+                Time-poor, high-responsibility roles where personal investing often gets pushed to
+                “later” while cash keeps piling up across accounts.
+              </div>
+            </li>
+            <li class="who-item">
+              <div class="who-tag">BFSI & Product</div>
+              <div class="who-title">Variable & ESOP-heavy Compensation</div>
+              <div class="who-text">
+                Complex salary structures with bonuses, incentives and equity that need a clear
+                plan for diversification, risk and taxes.
+              </div>
+            </li>
+            <li class="who-item">
+              <div class="who-tag">Founders</div>
+              <div class="who-title">Entrepreneurs & Early Employees</div>
+              <div class="who-text">
+                Business-linked income, liquidity events and concentrated risk that call for a
+                framework-driven wealth blueprint.
+              </div>
+            </li>
+            <li class="who-item">
+              <div class="who-tag">CXOs</div>
+              <div class="who-title">Multi–Income Households</div>
+              <div class="who-text">
+                Multiple bank accounts, MFs, stocks and properties spread across family members
+                needing a single, consolidated view.
+              </div>
+            </li>
+            <li class="who-item">
+              <div class="who-tag">NRIs</div>
+              <div class="who-title">Global Professionals with India Assets</div>
+              <div class="who-text">
+                Cross-border investments, regulations and taxation with a need for clarity on what
+                to retain, repatriate or rebalance.
+              </div>
+            </li>
+            <li class="who-item">
+              <div class="who-tag">Families</div>
+              <div class="who-title">ESOP & Equity-heavy Portfolios</div>
+              <div class="who-text">
+                Families holding MFs, direct equity and ESOPs who want a disciplined,
+                goals-based portfolio management approach.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section-label">Scope</div>
+        <h2 class="section-title">Your Portfolio Management</h2>
+        <p class="section-intro">
+          We work as your long-term partners — mapping every investment back to specific goals,
+          risk comfort and timelines instead of chasing short-term market noise.
+        </p>
+
+        <div class="portfolio-wrapper">
+          <ul class="portfolio-grid">
+            <li class="portfolio-item">Mutual Funds</li>
+            <li class="portfolio-item">Direct Equity / Stocks</li>
+            <li class="portfolio-item">ESOPs & Equity Compensation</li>
+            <li class="portfolio-item">Fixed Income & Debt</li>
+            <li class="portfolio-item">Retirement & Long-term Assets</li>
+            <li class="portfolio-item">Emergency & Liquidity Buffers</li>
+          </ul>
+          <p class="portfolio-caption">
+            A single, premium dashboard-like view, but with a human advisory layer guiding every
+            decision.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Mock assignment layout built for the Moneyvesta Web Development Intern task.
+    </footer>
+  </div>
+</body>
+</html>
